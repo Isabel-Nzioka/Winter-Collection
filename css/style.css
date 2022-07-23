@@ -1,0 +1,218 @@
+:root {
+  --color-primary: #e46ea5;
+  --color-primary-light: #eb8f8f; }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.6; }
+
+header {
+  height: 18vh;
+  display: flex;
+  flex-direction: column;
+  border-bottom: 2px solid black; }
+
+.Main {
+  background-image: linear-gradient(to right bottom, rgba(36, 129, 216, 0.9), rgba(255, 255, 255, 0.6));
+  font-size: 1.4rem; }
+
+.Section1 {
+  height: 85vh;
+  text-align: center;
+  background-position: top; }
+
+.sub {
+  height: 100vh;
+  padding: 7rem 1rem;
+  display: flex;
+  flex-direction: row;
+  margin-left: 2.5rem;
+  background-color: #f8eeef; }
+
+.Section2 {
+  height: 110vh; }
+
+.Section2,
+.Section3 {
+  margin: 6rem 3rem;
+  padding: 4rem 1rem;
+  text-align: center; }
+
+.Section3 {
+  height: 210vh; }
+
+.Section4 {
+  height: 100vh;
+  background-color: #ef4565; }
+
+.heading-primary {
+  font-size: 2.7rem;
+  padding-top: 5rem;
+  color: #91d1d1; }
+
+.heading-secondary {
+  color: #151616;
+  font-size: 2.6rem;
+  margin-bottom: 2rem; }
+
+.heading-primary:after,
+.heading-secondary:after {
+  display: block;
+  height: 2px;
+  background-color: #ef4565;
+  content: " ";
+  width: 100px;
+  margin: 0 auto;
+  margin-top: 15px; }
+
+.Paragraph {
+  line-height: 1.4;
+  margin-bottom: 4rem;
+  padding-top: 2rem; }
+
+.Logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 2rem 2rem 0rem 2rem; }
+  .Logo__name {
+    font-family: "Rubik Moonrocks", cursive;
+    color: #ef4565;
+    font-size: 3.6rem; }
+
+.Menu {
+  margin: 0 auto; }
+  .Menu ul {
+    list-style: none;
+    color: #0f0f0f;
+    display: flex; }
+    .Menu ul li {
+      padding: 1rem 3rem; }
+
+.content1 {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 7rem 5rem; }
+
+.content2 {
+  width: 50%; }
+
+.sub-content {
+  width: 40%;
+  margin-top: 13rem;
+  padding: 2rem 8rem; }
+
+.sub-img {
+  display: flex;
+  flex-direction: row;
+  width: 60%; }
+  .sub-img img {
+    height: 100%;
+    width: 100%;
+    border-top-left-radius: 7rem; }
+
+.sub-img1 {
+  width: 45%;
+  height: 85vh;
+  padding-top: 10rem;
+  margin-right: -10rem;
+  z-index: 1000;
+  transition: all 0.4s; }
+  .sub-img1:hover {
+    box-shadow: 0 11rem 2rem rgba(168, 143, 143, 0.15);
+    z-index: 1; }
+
+.sub-img2 {
+  width: 55%;
+  z-index: 1;
+  transition: all 0.4s; }
+  .sub-img2:hover {
+    box-shadow: 0 11rem 2rem rgba(168, 143, 143, 0.15);
+    z-index: 1000; }
+
+.Cards {
+  display: flex;
+  flex-direction: row;
+  height: 90vh; }
+
+.card {
+  width: 30%;
+  height: 65vh;
+  margin-top: 3rem;
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .card img {
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: all 0.5s; }
+  .card img:hover {
+    opacity: 1;
+    transform: scaleY(1.01);
+    box-shadow: 0 1rem 2rem rgba(177, 163, 163, 0.15); }
+
+.one {
+  background-image: url("../img/skin13.jpg"); }
+
+.two {
+  background-image: url("../img/skin19.jpg"); }
+
+.three {
+  background-image: url("../img/skin12.jpg"); }
+
+.four {
+  background-image: url("../img/img1.jpg"); }
+
+.five {
+  background-image: url("../img/img6.jpg"); }
+
+.six {
+  background-image: url("../img/img5.jpg"); }
+
+.card:hover {
+  opacity: 1; }
+
+.card:not(:last-of-type) {
+  margin-right: 4rem; }
+
+.button, .button:link, .buttonvisited {
+  padding: 1rem 4rem;
+  font-size: inherit;
+  background-color: #f0d9dd;
+  text-decoration: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: all 0.4s; }
+  .button:hover, .button:link:hover, .buttonvisited:hover {
+    background-color: #ef4565;
+    box-shadow: 0 1rem 2rem rgba(128, 128, 128, 0.15);
+    transform: translateY(-2px); }
+
+.cart {
+  margin: 1rem;
+  border: 1px solid #ef4565; }
+
+.products, .products:link, .productsvisited {
+  margin-top: 3rem;
+  padding: 1rem 5rem; }
+
+.butn {
+  margin: 0 auto;
+  background-color: #ef4565; }

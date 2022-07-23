@@ -1,0 +1,63 @@
+.Cards {
+  display: flex;
+  flex-direction: row;
+  height: 90vh;
+}
+
+.card {
+  width: 30%;
+  height: 65vh;
+
+  margin-top: 3rem;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  img {
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: all 0.5s;
+  }
+
+  img:hover {
+    opacity: 1;
+    transform: scaleY(1.01);
+    box-shadow: 0 1rem 2rem rgba(#b1a3a3, 0.15);
+  }
+
+  //   opacity: 0;
+}
+
+.one {
+  background-image: url("../img/skin13.jpg");
+
+  //   background-image: url("../img/skin13.jpg");
+  //   background-position: cover;
+
+  //   background-image: url("../img/skin10.jpg");
+}
+.two {
+  background-image: url("../img/skin19.jpg");
+}
+.three {
+  background-image: url("../img/skin12.jpg");
+}
+.four {
+  background-image: url("../img/img1.jpg");
+}
+.five {
+  background-image: url("../img/img6.jpg");
+}
+.six {
+  background-image: url("../img/img5.jpg");
+}
+
+.card:hover {
+  opacity: 1;
+}
+
+.card:not(:last-of-type) {
+  margin-right: 4rem;
+  //   background-color: #741f49;
+}

@@ -1,0 +1,135 @@
+.heading-primary {
+  font-size: 2.7rem;
+  //   color: --color-primary;
+  padding-top: 5rem;
+  //   margin-bottom: 2.3rem;
+  //   padding: 2rem 8rem;
+  color: #91d1d1;
+}
+
+.heading-secondary {
+  color: #151616;
+  font-size: 2.6rem;
+  margin-bottom: 2rem;
+}
+
+.heading-primary:after,
+.heading-secondary:after {
+  display: block;
+  height: 2px;
+  background-color: #ef4565;
+  //   background-color: yellow;
+  content: " ";
+  width: 100px;
+  margin: 0 auto;
+  margin-top: 15px;
+}
+
+.Paragraph {
+  line-height: 1.4;
+  margin-bottom: 4rem;
+
+  padding-top: 2rem;
+}
+
+// .Paragraph:not(:last-of-type) {
+//   margin-bottom: 4rem;
+// }
+// .Paragraph {
+//   margin-bottom: 4rem;
+// }
+
+.Logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 2rem 2rem 0rem 2rem;
+
+  //   background-color: beige;
+
+  &__name {
+    font-family: "Rubik Moonrocks", cursive;
+    color: #ef4565;
+    font-size: 3.6rem;
+  }
+}
+
+.Menu {
+  margin: 0 auto;
+
+  ul {
+    list-style: none;
+    color: rgb(15, 15, 15);
+    // background-color: yellow;
+    display: flex;
+
+    li {
+      padding: 1rem 3rem;
+    }
+  }
+}
+
+//////////// SECTION 2.//////////////////
+.content1 {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  margin: 7rem 5rem;
+}
+
+.content2 {
+  width: 50%;
+  //   height: 100%;
+  //   height: 70vh;
+}
+
+//////////////////////////////////// sub       /////////////////////////////////////////
+
+.sub-content {
+  width: 40%;
+  margin-top: 13rem;
+  padding: 2rem 8rem;
+}
+.sub-img {
+  display: flex;
+  flex-direction: row;
+
+  width: 60%;
+
+  img {
+    height: 100%;
+    width: 100%;
+
+    border-top-left-radius: 7rem;
+  }
+}
+
+.sub-img1 {
+  width: 45%;
+  height: 85vh;
+  padding-top: 10rem;
+  margin-right: -10rem;
+  z-index: 1000;
+  transition: all 0.4s;
+
+  &:hover {
+    box-shadow: 0 11rem 2rem rgba(#a88f8f, 0.15);
+    z-index: 1;
+  }
+}
+
+.sub-img2 {
+  //   background-image: url("../img/skin13.jpg");
+  //   background-repeat: no-repeat;
+  //   background-size: cover;
+  width: 55%;
+  z-index: 1;
+  transition: all 0.4s;
+
+  &:hover {
+    box-shadow: 0 11rem 2rem rgba(#a88f8f, 0.15);
+    z-index: 1000;
+  }
+}
