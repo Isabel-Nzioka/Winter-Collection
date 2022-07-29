@@ -28,16 +28,18 @@ header {
   border-bottom: 2px solid black; }
 
 .Main {
-  background-image: linear-gradient(to right bottom, rgba(36, 129, 216, 0.9), rgba(255, 255, 255, 0.6));
+  background-image: url("../img/pic34.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   font-size: 1.4rem; }
 
 .Section1 {
   height: 85vh;
-  text-align: center;
-  background-position: top; }
+  text-align: center; }
 
 .sub {
-  height: 100vh;
+  height: 110vh;
   padding: 7rem 1rem;
   display: flex;
   flex-direction: row;
@@ -56,9 +58,13 @@ header {
 .Section3 {
   height: 210vh; }
 
-.Section4 {
-  height: 100vh;
-  background-color: #ef4565; }
+.footer {
+  background-image: linear-gradient(to right bottom, rgba(145, 209, 209, 0.9), rgba(255, 255, 255, 0.6));
+  height: 60vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 8rem 13rem; }
 
 .heading-primary {
   font-size: 2.7rem;
@@ -69,6 +75,11 @@ header {
   color: #151616;
   font-size: 2.6rem;
   margin-bottom: 2rem; }
+
+.heading-tertiary {
+  color: #151616;
+  font-size: 2rem;
+  padding-bottom: 1rem; }
 
 .heading-primary:after,
 .heading-secondary:after {
@@ -119,14 +130,25 @@ header {
   margin-top: 13rem;
   padding: 2rem 8rem; }
 
-.sub-img {
+.sub-contentTwo {
+  width: 40%;
+  padding: 9rem 1rem; }
+
+.sub-img,
+.sub-imgTwo {
   display: flex;
   flex-direction: row;
   width: 60%; }
-  .sub-img img {
+  .sub-img img,
+  .sub-imgTwo img {
     height: 100%;
-    width: 100%;
-    border-top-left-radius: 7rem; }
+    width: 100%; }
+
+.sub-img img {
+  border-top-left-radius: 7rem; }
+
+.sub-imgTwo img {
+  border-top-right-radius: 7rem; }
 
 .sub-img1 {
   width: 45%;
@@ -139,6 +161,16 @@ header {
     box-shadow: 0 11rem 2rem rgba(168, 143, 143, 0.15);
     z-index: 1; }
 
+.sub-img4 {
+  width: 45%;
+  transform: translateX(-10rem);
+  height: 85vh;
+  padding-top: 10rem; }
+
+.sub-img3 {
+  height: 75vh;
+  width: 50%; }
+
 .sub-img2 {
   width: 55%;
   z-index: 1;
@@ -147,17 +179,56 @@ header {
     box-shadow: 0 11rem 2rem rgba(168, 143, 143, 0.15);
     z-index: 1000; }
 
+.footer ul {
+  list-style: none; }
+
+.footer ul li {
+  padding: 3px; }
+
+.footer li a {
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: #ef4565; }
+
+.footer li a:hover {
+  color: inherit; }
+
+.footer form #input {
+  background-color: #f0d9dd;
+  padding: 1rem;
+  border: none;
+  color: #ef4565;
+  width: 100%;
+  border: 1px solid #ef4565;
+  outline: none; }
+
+.footer form #input:hover {
+  border: 1px solid #151616; }
+
 .Cards {
   display: flex;
   flex-direction: row;
-  height: 90vh; }
+  height: 90vh;
+  margin-bottom: 2rem; }
 
 .card {
   width: 30%;
   height: 65vh;
   margin-top: 3rem;
   background-repeat: no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  transition: all 0.5s; }
+  .card__icon {
+    transform: translateY(-5rem);
+    background-color: #0a0101;
+    color: white;
+    float: left;
+    font-size: 2rem;
+    padding: 1rem;
+    opacity: 0;
+    transition: all 0.5s; }
+    .card__icon:hover {
+      background-color: #531010; }
   .card img {
     height: 100%;
     width: 100%;
@@ -167,6 +238,13 @@ header {
     opacity: 1;
     transform: scaleY(1.01);
     box-shadow: 0 1rem 2rem rgba(177, 163, 163, 0.15); }
+
+.card:hover {
+  opacity: 1; }
+
+.card:hover .card__icon {
+  transform: translateY(-6rem);
+  opacity: 1; }
 
 .one {
   background-image: url("../img/skin13.jpg"); }
@@ -186,16 +264,12 @@ header {
 .six {
   background-image: url("../img/img5.jpg"); }
 
-.card:hover {
-  opacity: 1; }
-
 .card:not(:last-of-type) {
   margin-right: 4rem; }
 
 .button, .button:link, .buttonvisited {
   padding: 1rem 4rem;
   font-size: inherit;
-  background-color: #f0d9dd;
   text-decoration: none;
   cursor: pointer;
   text-transform: uppercase;
@@ -207,12 +281,13 @@ header {
 
 .cart {
   margin: 1rem;
-  border: 1px solid #ef4565; }
+  background-color: white;
+  border: 1px solid #302f2f; }
 
 .products, .products:link, .productsvisited {
   margin-top: 3rem;
-  padding: 1rem 5rem; }
+  padding: 1rem 5rem;
+  border: 2px solid #000000; }
 
-.butn {
-  margin: 0 auto;
-  background-color: #ef4565; }
+.productsTwo {
+  float: center; }

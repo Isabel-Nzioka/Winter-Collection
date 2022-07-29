@@ -2,6 +2,8 @@
   display: flex;
   flex-direction: row;
   height: 90vh;
+  // background-color: #e96c6c;
+  margin-bottom: 2rem;
 }
 
 .card {
@@ -11,7 +13,25 @@
   margin-top: 3rem;
 
   background-repeat: no-repeat;
+
   background-size: cover;
+  transition: all 0.5s;
+
+  &__icon {
+    transform: translateY(-5rem);
+    background-color: #0a0101;
+    color: white;
+    float: left;
+    font-size: 2rem;
+    padding: 1rem;
+
+    opacity: 0;
+    transition: all 0.5s;
+
+    &:hover {
+      background-color: rgb(83, 16, 16);
+    }
+  }
 
   img {
     height: 100%;
@@ -26,7 +46,18 @@
     box-shadow: 0 1rem 2rem rgba(#b1a3a3, 0.15);
   }
 
-  //   opacity: 0;
+  // img:hover .card__icon {
+  //   transform: translateY(-5rem);
+  // }
+}
+
+.card:hover {
+  opacity: 1;
+}
+
+.card:hover .card__icon {
+  transform: translateY(-6rem);
+  opacity: 1;
 }
 
 .one {
@@ -51,10 +82,6 @@
 }
 .six {
   background-image: url("../img/img5.jpg");
-}
-
-.card:hover {
-  opacity: 1;
 }
 
 .card:not(:last-of-type) {

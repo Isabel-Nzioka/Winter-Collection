@@ -4,7 +4,8 @@
   &visited {
     padding: 1rem 4rem;
     font-size: inherit;
-    background-color: #f0d9dd;
+    // background-color: #f0d9dd;
+
     text-decoration: none;
 
     cursor: pointer;
@@ -13,7 +14,7 @@
 
     &:hover {
       background-color: #ef4565;
-      //   color: $color-2;
+
       box-shadow: 0 1rem 2rem rgba(grey, 0.15);
       transform: translateY(-2px);
     }
@@ -21,7 +22,10 @@
 }
 .cart {
   margin: 1rem;
-  border: 1px solid #ef4565;
+  background-color: white;
+  border: 1px solid #302f2f;
+
+  // border: 1px solid #ef4565;
 }
 .products {
   &,
@@ -29,5 +33,11 @@
   &visited {
     margin-top: 3rem;
     padding: 1rem 5rem;
+    border: 2px solid #000000;
   }
+}
+
+.productsTwo {
+  // margin-left: 5rem;
+  float: center;
 }
