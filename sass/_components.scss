@@ -44,38 +44,147 @@
 // .Paragraph {
 //   margin-bottom: 4rem;
 // }
-
+//////////////////////////////////////////////////////////////////////////////////////////////////@at-root
+///         NAVIGATION
 .Logo {
+  text-align: center;
+  margin: 0rem 2rem;
+
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin: 2rem 2rem 0rem 2rem;
-
-  //   background-color: beige;
+  // padding: 1rem 3rem;
 
   &__name {
-    font-family: "Rubik Moonrocks", cursive;
-    color: #ef4565;
+    // font-family: "Pacifico", cursive;
+    font-family: "Montserrat", sans-serif;
+    color: #080102;
     font-size: 3.6rem;
+    font-weight: 700;
+    // background-color: #a88f8f;
+  }
+
+  &__more {
+    display: flex;
+    flex-direction: row;
+  }
+  &__icons {
+    margin-right: 3rem;
+    padding: 1rem 1rem;
   }
 }
 
 .Menu {
   margin: 0 auto;
+  // display: flex;
+  // flex-direction: row;
+  color: #080102;
+  font-size: 1.6rem;
+  // justify-content: flex-end;
 
   ul {
     list-style: none;
     color: rgb(15, 15, 15);
     // background-color: yellow;
     display: flex;
+    margin: 0 auto;
+    // background-color: #91d1d1;
 
     li {
       padding: 1rem 3rem;
     }
   }
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
 }
 
-//////////// SECTION 2.//////////////////
+//////// Header ////////////////
+
+.Header__content {
+  width: 40%;
+  // background-color: #dcf3f3;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  h1 {
+    margin: 5rem 1rem;
+  }
+  p {
+    margin: 2rem;
+    // letter-spacing: 2px;
+  }
+
+  // &--image {
+  //   // background-color: #ef4565;
+  //   height: 100%;
+  //   margin-top: -20rem;
+
+  // position: absolute;
+
+  // margin: 0 auto;
+
+  // img {
+  //   // border-radius: 50%;
+  //   width: 100%;
+  //   height: 100%;
+  // }
+  // }
+}
+
+.Header__image {
+  width: 60%;
+  // height: 75vh;
+  // background-color: #a88f8f;
+  // background-image: url("../img/image2.jpg");
+
+  figure {
+    // height: 70%;
+
+    margin-top: 2rem;
+    height: 100%;
+  }
+
+  img {
+    height: 100%;
+    width: 100%;
+    border-top-left-radius: 30rem;
+    border-top-right-radius: 30rem;
+  }
+
+  // figcaption {
+  //   // transform: translateX(-2rem);
+  //   transform: translateY(-25rem);
+
+  //   font-size: 3.6rem;
+  //   font-weight: 700;
+  // }
+}
+
+// .Header__images {
+//   width: 30%;
+//   // background-color: yellow;
+
+//   figure {
+// height: 70%;
+
+// margin-top: 2rem;
+//     height: 100%;
+//   }
+
+//   img {
+//     height: 100%;
+//     width: 100%;
+//     // border-top-left-radius: 30rem;
+//     // border-top-right-radius: 30rem;
+//   }
+// }
+
+//////////// SECTION 2./////////////////////////////////////////////////////////////////////
 .content1 {
   width: 50%;
   display: flex;

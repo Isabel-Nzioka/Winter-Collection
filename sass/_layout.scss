@@ -1,9 +1,16 @@
 header {
-  //   background-color: rgb(228, 228, 170);
-  height: 18vh;
+  // background-color: rgb(228, 228, 170);
+  // position: sticky;
+  // top: 0;
+  height: 15vh;
   display: flex;
   flex-direction: column;
-  border-bottom: 2px solid black;
+  border-bottom: 1px solid black;
+  font-weight: 500;
+  z-index: -1;
+  // position: absolute;
+
+  background-color: transparent;
 }
 
 // rgba(--color-primary, 0.9),
@@ -11,17 +18,18 @@ header {
 .Main {
   // background-image: linear-gradient(
   //     to right bottom,
-  //     rgba(#91d1d1, 0.9),
+  //     rgba(#91d1d1, 0.6),
   //     rgba(white, 0.2)
   //   ),
-  //   url("../img/13d2edb5983f3b303df573588d9e49b8.jpg");
+  //   url("../img/image2.jpg");
   // margin: 0 auto;
 
-  background-image: url("../img/pic34.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  // background-position: top;
+  // background-image: url("../img/img27.jpg");
+  // bac2 bac3
+  // background-repeat: no-repeat;
+  // background-size: cover;
+  // background-position: center;
+  background-position: top;
   // background-position: bottom;
   // pic16 pic19-- pic17 skin20
   font-size: 1.4rem;
@@ -29,8 +37,16 @@ header {
 }
 
 .Section1 {
+  background-image: url("../img/img5.jpg");
+  //image 2
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   height: 85vh;
   text-align: center;
+
+  display: flex;
+  flex-direction: row;
 }
 
 .sub {

@@ -17,26 +17,33 @@ html {
 
 body {
   font-family: "Montserrat", sans-serif;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   font-weight: 400;
-  line-height: 1.6; }
+  line-height: 1.6;
+  letter-spacing: 1px; }
 
 header {
-  height: 18vh;
+  height: 15vh;
   display: flex;
   flex-direction: column;
-  border-bottom: 2px solid black; }
+  border-bottom: 1px solid black;
+  font-weight: 500;
+  z-index: -1;
+  background-color: transparent; }
 
 .Main {
-  background-image: url("../img/pic34.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  background-position: top;
   font-size: 1.4rem; }
 
 .Section1 {
+  background-image: url("../img/img5.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   height: 85vh;
-  text-align: center; }
+  text-align: center;
+  display: flex;
+  flex-direction: row; }
 
 .sub {
   height: 110vh;
@@ -97,23 +104,58 @@ header {
   padding-top: 2rem; }
 
 .Logo {
+  text-align: center;
+  margin: 0rem 2rem;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  margin: 2rem 2rem 0rem 2rem; }
+  justify-content: space-between; }
   .Logo__name {
-    font-family: "Rubik Moonrocks", cursive;
-    color: #ef4565;
-    font-size: 3.6rem; }
+    font-family: "Montserrat", sans-serif;
+    color: #080102;
+    font-size: 3.6rem;
+    font-weight: 700; }
+  .Logo__more {
+    display: flex;
+    flex-direction: row; }
+  .Logo__icons {
+    margin-right: 3rem;
+    padding: 1rem 1rem; }
 
 .Menu {
-  margin: 0 auto; }
+  margin: 0 auto;
+  color: #080102;
+  font-size: 1.6rem; }
   .Menu ul {
     list-style: none;
     color: #0f0f0f;
-    display: flex; }
+    display: flex;
+    margin: 0 auto; }
     .Menu ul li {
       padding: 1rem 3rem; }
+  .Menu a {
+    text-decoration: none;
+    color: inherit; }
+
+.Header__content {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
+  .Header__content h1 {
+    margin: 5rem 1rem; }
+  .Header__content p {
+    margin: 2rem; }
+
+.Header__image {
+  width: 60%; }
+  .Header__image figure {
+    margin-top: 2rem;
+    height: 100%; }
+  .Header__image img {
+    height: 100%;
+    width: 100%;
+    border-top-left-radius: 30rem;
+    border-top-right-radius: 30rem; }
 
 .content1 {
   width: 50%;
