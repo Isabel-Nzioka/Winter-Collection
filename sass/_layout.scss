@@ -2,10 +2,10 @@ header {
   // background-color: rgb(228, 228, 170);
   // position: sticky;
   // top: 0;
-  height: 15vh;
+  height: 16vh;
   display: flex;
   flex-direction: column;
-  border-bottom: 1px solid black;
+  // border-bottom: 1px solid black;
   font-weight: 500;
   z-index: -1;
   // position: absolute;
@@ -25,6 +25,7 @@ header {
   // margin: 0 auto;
 
   // background-image: url("../img/img27.jpg");
+  // background-color: #91d1d1;
   // bac2 bac3
   // background-repeat: no-repeat;
   // background-size: cover;
@@ -37,21 +38,22 @@ header {
 }
 
 .Section1 {
-  background-image: url("../img/img5.jpg");
+  // background-image: url("../img/img5.jpg");
   //image 2
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  height: 85vh;
-  text-align: center;
+  // background-repeat: no-repeat;
+  // background-size: cover;
+  // background-position: center;
+  height: 100vh;
 
-  display: flex;
-  flex-direction: row;
+  // text-align: center;
+
+  // display: flex;
+  // flex-direction: row;
 }
 
 .sub {
   height: 110vh;
-  padding: 7rem 1rem;
+  padding: 7rem 4rem;
 
   display: flex;
   flex-direction: row;
@@ -67,6 +69,7 @@ header {
   margin: 6rem 3rem;
   padding: 4rem 1rem;
   text-align: center;
+  padding: 4rem;
   //   display: flex;
   //   flex-direction: row;
 
@@ -74,13 +77,19 @@ header {
 }
 
 .Section3 {
-  height: 210vh;
+  height: 110vh;
 }
 
 // .Section4 {
 //   height: 100vh;
 //   background-color: #ef4565;
 // }
+
+.SubSections {
+  height: 155vh;
+  padding: 4rem;
+  // background-color: #91d1d1;
+}
 
 .footer {
   background-image: linear-gradient(

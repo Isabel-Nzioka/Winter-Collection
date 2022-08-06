@@ -7,14 +7,13 @@
 }
 
 .card {
-  width: 30%;
+  width: 33%;
   height: 65vh;
 
   margin-top: 3rem;
-
   background-repeat: no-repeat;
-
   background-size: cover;
+  box-shadow: 1rem 10 20rem rgba(#dd0e0e, 0.7);
   transition: all 0.5s;
 
   &__icon {
