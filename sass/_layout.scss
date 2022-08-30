@@ -59,6 +59,13 @@ header {
   flex-direction: row;
   margin-left: 2.5rem;
   background-color: #f8eeef;
+
+  @media only screen and (max-width: 800px) {
+    flex-direction: column;
+    padding: 2rem;
+
+    height: 150vh;
+  }
 }
 
 .Section2 {

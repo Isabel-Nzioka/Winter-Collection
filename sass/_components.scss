@@ -206,6 +206,27 @@
   width: 40%;
   margin-top: 13rem;
   padding: 2rem 8rem;
+
+  @media only screen and (max-width: $bp-large) {
+    margin-top: 8rem;
+    padding: 2rem 4rem;
+  }
+
+  @media only screen and (max-width: 900px) {
+    padding: 2rem;
+  }
+
+  @media only screen and (max-width: 800px) {
+    display: flex;
+    flex-direction: column;
+    // justify-content: space-evenly;
+    width: 100%;
+    // background-color: #d1bd7b;
+
+    h1 {
+      align-self: center;
+    }
+  }
 }
 
 .sub-contentTwo {
@@ -229,9 +250,37 @@
   img {
     border-top-left-radius: 7rem;
   }
+
+  @media only screen and (max-width: $bp-large) {
+    margin-top: 4rem;
+    img {
+      height: 90%;
+    }
+  }
+
+  @media only screen and (max-width: 900px) {
+    img {
+      height: 80%;
+    }
+  }
+
+  @media only screen and (max-width: 800px) {
+    width: 100%;
+    // background-color: yellow;
+    img {
+      height: 80%;
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+    img {
+      height: 40%;
+    }
+  }
 }
 
 .sub-imgTwo {
+  // background-color: yellow;
   img {
     border-top-right-radius: 7rem;
   }
@@ -249,18 +298,18 @@
     box-shadow: 0 11rem 2rem rgba(#a88f8f, 0.15);
     z-index: 1;
   }
+
+  @media only screen and (max-width: $bp-largest) {
+    width: 60%;
+  }
+
+  // @media only screen and (max-width: 900px) {
+  //   img {
+  //     height: 85%;
+  //   }
+  // }
 }
 
-.sub-img4 {
-  width: 45%;
-  transform: translateX(-10rem);
-  height: 85vh;
-  padding-top: 10rem;
-}
-.sub-img3 {
-  height: 75vh;
-  width: 50%;
-}
 .sub-img2 {
   width: 55%;
   z-index: 1;
@@ -270,6 +319,33 @@
     box-shadow: 0 11rem 2rem rgba(#a88f8f, 0.15);
     z-index: 1000;
   }
+
+  @media only screen and (max-width: $bp-largest) {
+    width: 80%;
+  }
+
+  @media only screen and (max-width: 800px) {
+    width: 70%;
+  }
+}
+
+.sub-img4 {
+  width: 45%;
+  transform: translateX(-10rem);
+  height: 85vh;
+  padding-top: 10rem;
+
+  // @media only screen and (max-width: $bp-large) {
+  //   width: 100%;
+  // }
+}
+.sub-img3 {
+  height: 75vh;
+  width: 50%;
+
+  // @media only screen and (max-width: $bp-large) {
+  // width: 90%;
+  // }
 }
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////@at-root//////@at-root
