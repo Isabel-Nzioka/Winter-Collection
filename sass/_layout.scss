@@ -66,6 +66,10 @@ header {
 
     height: 150vh;
   }
+
+  @media only screen and (max-width: 650px) {
+    height: 135vh;
+  }
 }
 
 .Section2 {
