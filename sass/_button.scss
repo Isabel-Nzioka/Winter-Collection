@@ -23,26 +23,39 @@
 .cart {
   margin: 1rem;
   background-color: white;
-  border: 1px solid #302f2f;
+  border: 1px solid #6d6b6b;
 
   // border: 1px solid #ef4565;
 }
 .products {
-  &,
-  &:link,
-  &visited {
-    margin-top: 3rem;
-    padding: 1rem 5rem;
-    border: 2px solid #000000;
+  margin-top: 3rem;
+  // padding: 3rem 5rem;
+  border: 2px solid #000000;
 
-    @media only screen and (max-width: 800px) {
-      margin-left: 25%;
-      margin-top: 2rem;
-    }
+  @media only screen and (max-width: 800px) {
+    // margin-left: 25%;
+    // margin-top: 2rem;
   }
 }
 
 .productsTwo {
   // margin-left: 5rem;
-  float: center;
+  // float: center;
+}
+
+.loadMore {
+  display: none;
+
+  @media only screen and (max-width: 950px) {
+    background-color: #f7f3f3;
+    padding: 1rem 3rem;
+    float: right;
+    outline: none;
+    border-bottom: 2px solid black;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    margin-top: 4rem;
+    display: block;
+  }
 }

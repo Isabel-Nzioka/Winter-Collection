@@ -245,9 +245,13 @@
 // border: none;
 // background-color: #3CBC8D;
 // color: white;
-
+////////////////////////////////////////////////////////////////////////////////////////////////////
+///  SUBSECTIONS
+///
+///
 .SubSections__one,
 .SubSections__two {
+  background-color: #ddc1c6;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -262,17 +266,32 @@
     width: 50%;
     height: 70vh;
     padding: 5rem 5rem;
+  }
 
-    h1 {
-      text-align: center;
-      margin-bottom: 2rem;
+  h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  p {
+    padding: 1rem;
+  }
+  button {
+    margin-top: 4rem;
+    margin-left: 1rem;
+  }
+
+  @media only screen and (max-width: 1000px) {
+    &--content {
+      padding: 4rem 2rem;
     }
-    p {
-      padding: 1rem;
-    }
-    button {
-      margin-top: 4rem;
-      margin-left: 1rem;
+  }
+
+  @media only screen and (max-width: 650px) {
+    flex-direction: column;
+    &--image,
+    &--content {
+      // height: 10vh;
+      width: 100%;
     }
   }
 }
@@ -286,7 +305,7 @@
     }
   }
   &--content {
-    // background-color: #ef4565;
+    // background-color: #575354;
 
     ul {
       list-style: none;
@@ -303,6 +322,29 @@
       margin-left: -1rem;
     }
   }
+
+  @media only screen and (max-width: 1000px) {
+    ul {
+      margin-left: 2rem;
+    }
+    &--image,
+    &--content {
+      height: 67vh;
+    }
+  }
+
+  @media only screen and (max-width: 650px) {
+    &--image,
+    &--content {
+      height: 51vh;
+    }
+  }
+
+  @media only screen and (max-width: 500px) {
+    &--content {
+      height: 59vh;
+    }
+  }
 }
 
 .SubSections__two {
@@ -317,5 +359,12 @@
   &--content {
     // background-color: #1f1a1b;
     padding: 5rem 4rem;
+  }
+
+  @media only screen and (max-width: 1000px) {
+    &--image,
+    &--content {
+      height: 50vh;
+    }
   }
 }
