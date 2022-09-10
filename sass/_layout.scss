@@ -44,6 +44,7 @@ header {
   // background-size: cover;
   // background-position: center;
   height: 100vh;
+  // background-color: black;
 
   // text-align: center;
 
@@ -52,6 +53,11 @@ header {
 
   @media only screen and (max-width: 1000px) {
     height: 150vh;
+    // background-color: black;
+  }
+
+  @media only screen and (max-width: 400px) {
+    height: 120vh;
     // background-color: black;
   }
 }
