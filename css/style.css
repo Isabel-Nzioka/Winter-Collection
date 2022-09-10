@@ -101,8 +101,7 @@ header {
 
 .SubSections {
   height: 155vh;
-  padding: 4rem;
-  background-color: #fcebee; }
+  padding: 4rem; }
   @media only screen and (max-width: 650px) {
     .SubSections {
       height: 237vh;
@@ -331,16 +330,21 @@ header {
   .SubSections__one--content {
     height: 59vh; } }
 
-.SubSections__two--image img {
-  width: 100%;
-  height: 100%; }
+@media only screen and (max-width: 500px) {
+  .SubSections__one {
+    margin-bottom: 2rem;
+    background-color: #fcebee; } }
 
-.SubSections__two--content {
-  padding: 5rem 4rem; }
-
-@media only screen and (max-width: 1000px) {
-  .SubSections__two--image, .SubSections__two--content {
-    height: 60vh; } }
+.SubSections__two {
+  background-color: #fcebee; }
+  .SubSections__two--image img {
+    width: 100%;
+    height: 100%; }
+  .SubSections__two--content {
+    padding: 5rem 4rem; }
+  @media only screen and (max-width: 1000px) {
+    .SubSections__two--image, .SubSections__two--content {
+      height: 60vh; } }
 
 .Cards {
   display: flex;
