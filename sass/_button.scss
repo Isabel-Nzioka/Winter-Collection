@@ -18,13 +18,23 @@
       box-shadow: 0 1rem 2rem rgba(grey, 0.15);
       transform: translateY(-2px);
     }
+
+    @media only screen and (max-width: 400px) {
+      padding: 1rem 2.5rem;
+      font-size: 1.3rem;
+    }
   }
 }
 .cart {
   margin: 1rem;
   background-color: white;
   border: 1px solid #6d6b6b;
+  // background-color: yellow;
 
+  @media only screen and (max-width: 400px) {
+    padding: 1rem 1.5rem;
+    // font-size: 1.3rem;
+  }
   // border: 1px solid #ef4565;
 }
 .products {
@@ -47,15 +57,20 @@
   display: none;
 
   @media only screen and (max-width: 950px) {
-    background-color: #f7f3f3;
+    // background-color: #f7f3f3;
     padding: 1rem 3rem;
     float: right;
     outline: none;
-    border-bottom: 2px solid black;
+    border-bottom: 1px solid black;
     border-top: none;
     border-left: none;
     border-right: none;
     margin-top: 4rem;
     display: block;
+  }
+
+  @media only screen and (max-width: 400px) {
+    margin-top: 10rem;
+    // background-color: yellow;
   }
 }

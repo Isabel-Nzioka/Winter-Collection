@@ -59,6 +59,9 @@ header {
       height: 120vh;
       margin-left: 0;
       padding: 1rem; } }
+  @media only screen and (max-width: 300px) {
+    .sub {
+      width: 100%; } }
 
 .Section2 {
   height: 110vh; }
@@ -84,14 +87,26 @@ header {
     .Section2,
     .Section3 {
       height: 100vh; } }
+  @media only screen and (max-width: 350px) {
+    .Section2,
+    .Section3 {
+      text-align: left; } }
+
+@media only screen and (max-width: 400px) {
+  .Section3 {
+    height: 115vh; } }
 
 .SubSections {
   height: 155vh;
-  padding: 4rem; }
+  padding: 4rem;
+  background-color: #91d1d1; }
   @media only screen and (max-width: 650px) {
     .SubSections {
       height: 237vh;
       padding: 1rem; } }
+  @media only screen and (max-width: 400px) {
+    .SubSections {
+      padding: 0; } }
 
 .footer {
   background-image: linear-gradient(to right bottom, rgba(145, 209, 209, 0.9), rgba(255, 255, 255, 0.6));
@@ -102,13 +117,11 @@ header {
   padding: 8rem 13rem; }
   @media only screen and (max-width: 900px) {
     .footer {
-      padding: 8rem;
-      background-color: black; } }
+      padding: 8rem; } }
   @media only screen and (max-width: 650px) {
     .footer {
       padding: 4rem;
       flex-direction: column;
-      background-color: yellow;
       height: 100vh;
       justify-content: space-between; } }
 
@@ -159,6 +172,9 @@ header {
   .Logo__icons {
     margin-right: 3rem;
     padding: 1rem 1rem; }
+    @media only screen and (max-width: 500px) {
+      .Logo__icons {
+        display: none; } }
 
 .Menu {
   margin: 0 auto;
@@ -277,6 +293,10 @@ header {
       .SubSections__two--image,
       .SubSections__two--content {
         width: 100%; } }
+  @media only screen and (max-width: 400px) {
+    .SubSections__one--content,
+    .SubSections__two--content {
+      padding: 1rem; } }
 
 .SubSections__one--image img {
   width: 100%;
@@ -445,11 +465,18 @@ header {
     background-color: #ef4565;
     box-shadow: 0 1rem 2rem rgba(128, 128, 128, 0.15);
     transform: translateY(-2px); }
+  @media only screen and (max-width: 400px) {
+    .button, .button:link, .buttonvisited {
+      padding: 1rem 2.5rem;
+      font-size: 1.3rem; } }
 
 .cart {
   margin: 1rem;
   background-color: white;
   border: 1px solid #6d6b6b; }
+  @media only screen and (max-width: 400px) {
+    .cart {
+      padding: 1rem 1.5rem; } }
 
 .products {
   margin-top: 3rem;
@@ -459,16 +486,18 @@ header {
   display: none; }
   @media only screen and (max-width: 950px) {
     .loadMore {
-      background-color: #f7f3f3;
       padding: 1rem 3rem;
       float: right;
       outline: none;
-      border-bottom: 2px solid black;
+      border-bottom: 1px solid black;
       border-top: none;
       border-left: none;
       border-right: none;
       margin-top: 4rem;
       display: block; } }
+  @media only screen and (max-width: 400px) {
+    .loadMore {
+      margin-top: 10rem; } }
 
 /* Slideshow container */
 .slideshow-container {

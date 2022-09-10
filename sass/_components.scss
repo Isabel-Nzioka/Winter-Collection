@@ -71,6 +71,10 @@
   &__icons {
     margin-right: 3rem;
     padding: 1rem 1rem;
+
+    @media only screen and (max-width: 500px) {
+      display: none;
+    }
   }
 }
 
@@ -300,6 +304,12 @@
     &--content {
       // height: 10vh;
       width: 100%;
+    }
+  }
+
+  @media only screen and (max-width: 400px) {
+    &--content {
+      padding: 1rem;
     }
   }
 }
