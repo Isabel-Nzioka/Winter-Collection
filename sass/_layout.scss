@@ -63,7 +63,8 @@ header {
   display: flex;
   flex-direction: row;
   margin-left: 2.5rem;
-  background-color: #f8eeef;
+  // background-color: #f8eeef;
+  // background-color: rgb(226, 108, 132);
 
   @media only screen and (max-width: 800px) {
     flex-direction: column;
@@ -73,17 +74,21 @@ header {
   }
 
   @media only screen and (max-width: 650px) {
-    height: 140vh;
+    height: 120vh;
+    // padding: 0;
+    margin-left: 0;
+    padding: 1rem;
   }
 }
 
 .Section2 {
   height: 110vh;
-
-  @media only screen and (max-width: 950px) {
-    height: 140vh;
-  }
 }
+
+.Section3 {
+  height: 140vh;
+}
+
 .Section2,
 .Section3 {
   margin: 6rem 3rem;
@@ -93,16 +98,18 @@ header {
   //   display: flex;
   //   flex-direction: row;
 
-  // background-color: palevioletred;
-  // @media only screen and (max-width: 1100px) {
-  //   padding: 2rem;
-  // }
-}
+  // background-color: rgb(49, 49, 40);
+  @media only screen and (max-width: 650px) {
+    padding: 2rem 1rem;
+    margin: 0;
+  }
 
-.Section3 {
-  height: 140vh;
   @media only screen and (max-width: 950px) {
     height: 140vh;
+  }
+
+  @media only screen and (max-width: 550px) {
+    height: 100vh;
   }
 }
 
@@ -117,7 +124,8 @@ header {
   // background-color: #91d1d1;
 
   @media only screen and (max-width: 650px) {
-    height: 210vh;
+    height: 237vh;
+    padding: 1rem;
   }
 }
 
@@ -133,4 +141,18 @@ header {
   flex-direction: row;
   justify-content: space-between;
   padding: 8rem 13rem;
+
+  @media only screen and (max-width: 900px) {
+    padding: 8rem;
+    background-color: black;
+  }
+  @media only screen and (max-width: 650px) {
+    // padding: 8rem 4rem;
+    padding: 4rem;
+    flex-direction: column;
+    background-color: yellow;
+    height: 100vh;
+    // align-items: center;
+    justify-content: space-between;
+  }
 }

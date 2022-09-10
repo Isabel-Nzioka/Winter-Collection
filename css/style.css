@@ -48,8 +48,7 @@ header {
   padding: 7rem 4rem;
   display: flex;
   flex-direction: row;
-  margin-left: 2.5rem;
-  background-color: #f8eeef; }
+  margin-left: 2.5rem; }
   @media only screen and (max-width: 800px) {
     .sub {
       flex-direction: column;
@@ -57,32 +56,42 @@ header {
       height: 150vh; } }
   @media only screen and (max-width: 650px) {
     .sub {
-      height: 140vh; } }
+      height: 120vh;
+      margin-left: 0;
+      padding: 1rem; } }
 
 .Section2 {
   height: 110vh; }
-  @media only screen and (max-width: 950px) {
-    .Section2 {
-      height: 140vh; } }
+
+.Section3 {
+  height: 140vh; }
 
 .Section2,
 .Section3 {
   margin: 6rem 3rem;
   text-align: center;
   padding: 4rem; }
-
-.Section3 {
-  height: 140vh; }
+  @media only screen and (max-width: 650px) {
+    .Section2,
+    .Section3 {
+      padding: 2rem 1rem;
+      margin: 0; } }
   @media only screen and (max-width: 950px) {
+    .Section2,
     .Section3 {
       height: 140vh; } }
+  @media only screen and (max-width: 550px) {
+    .Section2,
+    .Section3 {
+      height: 100vh; } }
 
 .SubSections {
   height: 155vh;
   padding: 4rem; }
   @media only screen and (max-width: 650px) {
     .SubSections {
-      height: 210vh; } }
+      height: 237vh;
+      padding: 1rem; } }
 
 .footer {
   background-image: linear-gradient(to right bottom, rgba(145, 209, 209, 0.9), rgba(255, 255, 255, 0.6));
@@ -91,6 +100,17 @@ header {
   flex-direction: row;
   justify-content: space-between;
   padding: 8rem 13rem; }
+  @media only screen and (max-width: 900px) {
+    .footer {
+      padding: 8rem;
+      background-color: black; } }
+  @media only screen and (max-width: 650px) {
+    .footer {
+      padding: 4rem;
+      flex-direction: column;
+      background-color: yellow;
+      height: 100vh;
+      justify-content: space-between; } }
 
 .heading-primary {
   font-size: 2.7rem;
@@ -154,6 +174,9 @@ header {
   .Menu a {
     text-decoration: none;
     color: inherit; }
+  @media only screen and (max-width: 1000px) {
+    .Menu {
+      display: none; } }
 
 .Header__content {
   width: 40%;
@@ -208,6 +231,9 @@ header {
   width: 100%;
   border: 1px solid #ef4565;
   outline: none; }
+  @media only screen and (max-width: 650px) {
+    .footer form #input {
+      width: 70%; } }
 
 .footer form #input:hover {
   border: 1px solid #151616; }
@@ -252,11 +278,9 @@ header {
       .SubSections__two--content {
         width: 100%; } }
 
-.SubSections__one--image {
-  background-color: #e0949f; }
-  .SubSections__one--image img {
-    width: 100%;
-    height: 100%; }
+.SubSections__one--image img {
+  width: 100%;
+  height: 100%; }
 
 .SubSections__one--content ul {
   list-style: none;
@@ -296,7 +320,7 @@ header {
 
 @media only screen and (max-width: 1000px) {
   .SubSections__two--image, .SubSections__two--content {
-    height: 50vh; } }
+    height: 60vh; } }
 
 .Cards {
   display: flex;
@@ -306,6 +330,9 @@ header {
   @media only screen and (max-width: 950px) {
     .Cards {
       margin-bottom: 0; } }
+  @media only screen and (max-width: 550px) {
+    .Cards {
+      height: 65vh; } }
 
 .flexCard {
   display: flex;
@@ -331,7 +358,6 @@ header {
   .two,
   .five {
     margin-left: 15vw;
-    background-color: yellow;
     display: none; } }
 
 .three,
@@ -345,7 +371,6 @@ header {
 
 .card {
   height: 65vh;
-  background-color: red;
   margin-top: 3rem;
   background-repeat: no-repeat;
   background-size: cover;
@@ -357,6 +382,9 @@ header {
   @media only screen and (max-width: 950px) {
     .card {
       margin-bottom: 2rem; } }
+  @media only screen and (max-width: 550px) {
+    .card {
+      height: 40vh; } }
   .card__icon {
     transform: translateY(-5rem);
     background-color: #0a0101;
@@ -600,6 +628,11 @@ header {
       .sub-content h1,
       .sub-contentTwo h1 {
         align-self: center; } }
+  @media only screen and (max-width: 650px) {
+    .sub-content,
+    .sub-contentTwo {
+      padding: 1rem;
+      margin-top: 1rem; } }
 
 .sub-img,
 .sub-imgTwo {
@@ -625,6 +658,10 @@ header {
     .sub-img,
     .sub-imgTwo {
       width: 100%; } }
+  @media only screen and (max-width: 500px) {
+    .sub-img img,
+    .sub-imgTwo img {
+      height: 20%; } }
 
 .sub-img img {
   border-top-left-radius: 7rem; }
@@ -666,9 +703,9 @@ header {
   @media only screen and (max-width: 650px) {
     .sub-img4 {
       transform: translateX(-2rem); } }
-  @media only screen and (max-width: 450px) {
+  @media only screen and (max-width: 500px) {
     .sub-img4 {
-      transform: translateX(-1rem); } }
+      transform: translateX(-0.5rem); } }
 
 .sub-img1,
 .sub-img4 {

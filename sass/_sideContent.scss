@@ -9,7 +9,7 @@
   margin-top: 13rem;
 
   padding-top: 2rem 8rem;
-  //   background-color: chocolate;
+  // background-color: chocolate;
 
   @media only screen and (max-width: $bp-large) {
     margin-top: 8rem;
@@ -30,6 +30,11 @@
       align-self: center;
     }
   }
+
+  @media only screen and (max-width: 650px) {
+    padding: 1rem;
+    margin-top: 1rem;
+  }
 }
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -38,7 +43,7 @@
 .sub-imgTwo {
   display: flex;
   flex-direction: row;
-  //   background-color: yellow;
+  // background-color: yellow;
 
   width: 60%;
 
@@ -67,6 +72,12 @@
     // img {
     //   height: 100%;
     // }
+  }
+
+  @media only screen and (max-width: 500px) {
+    img {
+      height: 20%;
+    }
   }
 }
 
@@ -134,8 +145,8 @@
     transform: translateX(-2rem);
   }
 
-  @media only screen and (max-width: 450px) {
-    transform: translateX(-1rem);
+  @media only screen and (max-width: 500px) {
+    transform: translateX(-0.5rem);
   }
 }
 
@@ -156,9 +167,9 @@
     width: 60%;
   }
 
-  // @media only screen and (max-width: 900px) {
+  // @media only screen and (max-width: 500px) {
   //   img {
-  //     height: 85%;
+  //     height: 75%;
   //   }
   // }
 }
@@ -197,6 +208,11 @@
     width: 60%;
     height: 70%;
   }
+  // @media only screen and (max-width: 500px) {
+  //   img {
+  //     height: 75%;
+  //   }
+  // }
 }
 
 // .sub-img4 {

@@ -99,6 +99,10 @@
     text-decoration: none;
     color: inherit;
   }
+
+  @media only screen and (max-width: 1000px) {
+    display: none;
+  }
 }
 
 //////// Header ////////////////
@@ -231,6 +235,10 @@
     width: 100%;
     border: 1px solid #ef4565;
     outline: none;
+
+    @media only screen and (max-width: 650px) {
+      width: 70%;
+    }
   }
 
   form #input:hover {
@@ -297,7 +305,7 @@
 }
 .SubSections__one {
   &--image {
-    background-color: #e0949f;
+    // background-color: #e0949f;
 
     img {
       width: 100%;
@@ -364,7 +372,7 @@
   @media only screen and (max-width: 1000px) {
     &--image,
     &--content {
-      height: 50vh;
+      height: 60vh;
     }
   }
 }
