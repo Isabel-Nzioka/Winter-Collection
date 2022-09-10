@@ -68,12 +68,18 @@
   @media only screen and (max-width: 950px) {
     width: 48%;
   }
+
+  @media only screen and (max-width: 400px) {
+    // margin-left: 0;
+  }
 }
 
 .card {
   // width: 33%;
   height: 65vh;
   // background-color: red;
+
+  border-radius: 1rem;
 
   margin-top: 3rem;
   background-repeat: no-repeat;
@@ -98,7 +104,8 @@
     transform: translateY(-5rem);
     background-color: #0a0101;
     color: white;
-    float: left;
+    // float: left;
+    display: inline-block;
     font-size: 2rem;
     padding: 1rem;
 
